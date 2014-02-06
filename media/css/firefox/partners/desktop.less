@@ -18,7 +18,7 @@
 /* {{{ Template overrides */
 .js #article-wrapper {
     opacity: 0;
-    height: 2840px;
+    // height: 2840px;
     overflow: hidden;
     position: relative;
     top: 0px;
@@ -187,10 +187,10 @@
         height: 700px;
         background: url(/media/img/firefox/partners/firefoxos-giantfox-back.png) no-repeat 0 0 ;
         position: absolute;
-        top: 140px;
+        top: 300px;
         left: 50%;
         margin-left: -70px;
-        .transition(all ease 0.6s);
+        .transition(all ease 0.8s);
         .giantfox-foreground {
             position: absolute;
             display: block;
@@ -201,11 +201,14 @@
             background: url(/media/img/firefox/partners/firefoxos-giantfox-front.png) no-repeat 100% 130px;
             z-index: 110;
         }
+        &.up {
+            top: 160px;
+        }
     }
 }
 
 .js .marketplacegiantfox {
-    top: 1600px;
+    top: 1880px;
 }
 
 .marketplacegiantfox {
@@ -663,12 +666,10 @@ body #partner-nav {
         left: 41px;
         height: 373px;
         width: 244px;
-        display: none;
     }
     #screen-overview {
-        display: block;
         background: url(/media/img/firefox/partners/screen-overview.jpg) 0 0 no-repeat;
-        z-index: 3;
+        z-index: 1;
         #foxtail {
             height: 156px;
             width: 156px;
@@ -680,7 +681,7 @@ body #partner-nav {
     }
     #screen-os {
         background: url(/media/img/firefox/partners/phone-os-screenshots.jpg?2013-06) 0 0 repeat-x;
-        z-index: 2;
+        z-index: 0;
 
         -moz-animation: os-screenslide 20s ease infinite alternate;
         -webkit-animation: os-screenslide 20s ease infinite alternate;
@@ -723,7 +724,7 @@ body #partner-nav {
 
     #screen-marketplace {
         background: url(/media/img/firefox/partners/phone-marketplace-screenshot.jpg) 0 0 no-repeat;
-        z-index: 1;
+        z-index: 0;
     }
 }
 
